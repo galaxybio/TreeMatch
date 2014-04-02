@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE A [
+  <!ELEMENT A ((B|A|C)*)>
+  <!ELEMENT C ((D|C|E)*)>
+  <!ELEMENT B (#PCDATA)>
+  <!ELEMENT D (#PCDATA)>
+  <!ELEMENT E (#PCDATA)>
+]>
+
+<A>
+	<B></B>
+	<A>
+		<B></B>
+		<C>
+			<D></D>
+		</C>
+		<C>
+		    <D></D>
+		    <E></E>
+		</C>
+	</A>
+</A>
+        

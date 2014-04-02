@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE bookstore [
+  <!ELEMENT bookstore ((book)*)>
+  <!ELEMENT book ((title|author|year|price)*)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+<book>
+  <title></title>
+  <author></author>
+  <year></year>
+  <price></price> 
+</book>
+<book>
+  <title></title>
+  <author></author>
+  <year></year>
+</book>
+</bookstore>
